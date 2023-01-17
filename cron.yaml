@@ -1,0 +1,7 @@
+cron:
+  - description: "fetch data every day at 11AM"
+    url: /fetch-data
+    schedule: every 5 minutes
+
+#    every 1 minutes from 12:00 to 12:05
+#    every mon, tue, wed, thu, fru 09:00

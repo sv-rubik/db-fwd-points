@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DB FWD points Dynamics</title>
+  <style>
+    #myChart, #myChart2 {
+      max-width:800px;
+      max-height:400px;
+    }
+  </style>
+</head>
+<body>
+
+<h1 class="heading">DB FWD points Dynamics</h1>
+
+<canvas id="myChart" width="400" height="200"></canvas>
+<button onclick="updateChart()">Refresh</button>
+<br>
+<canvas id="myChart2" width="400" height="200"></canvas>
+<button onclick="updateChart2()">Refresh</button>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/1.3.0/chartjs-plugin-annotation.min.js" integrity="sha512-1i3fuBf28VgGPXL0VAZrrZO0KvkTdYahuinzvEOFD/xKW5GdYKysg/nqddN7Wec27NmdR3YynxX+BygjomOx5A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+<script src="chart1.js"></script>
+<script src="chart2.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", ready)
+  function ready() {
+    updateChart()
+    updateChart2()
+  }
+</script>
+</body>
+</html>
